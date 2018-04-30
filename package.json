@@ -1,0 +1,27 @@
+{
+  "name": "api_weather_app",
+  "version": "1.0.0",
+  "description": "This is a lab excercise from Red Academy Web Development Professional Program, Spring 2018\r Objective: to create a simple app to fetch current informationa about weather in Vancouver. I exchange the fixed city info with geolocation statment and data, so if app shows the current place weather information. I've also added the date.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinaska/api_weather_app.git"
+  },
+  "author": "Kate Jeziorska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinaska/api_weather_app/issues"
+  },
+  "homepage": "https://github.com/pinaska/api_weather_app#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}

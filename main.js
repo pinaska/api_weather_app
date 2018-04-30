@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('#get-weather').on('click',function(){
     $('.results').empty();
+    $('.date').empty();
   
     //getting current position
     if(navigator.geolocation){
@@ -25,13 +26,39 @@ $(document).ready(function(){
           city = data.name
           kelvinTemp = data.main.temp;
 
+
+ //icon map (js dictionary)
+ var iconMap = new Map();
+ iconMap.set('10d','.sun-shower');
+ iconMap.set('10n','.sun-shower');
+ iconMap.set('09d','.rainy');
+ iconMap.set('09n','.rainy');
+ iconMap.set('01d', '.sunny');
+ iconMap.set('01n', '.sunny');
+ iconMap.set('02d', '.cloudy');
+ iconMap.set('02n', '.cloudy');
+ iconMap.set('03d', '.cloudy');
+ iconMap.set('03n', '.cloudy');
+ iconMap.set('04d', '.cloudy');
+ iconMap.set('04n', '.cloudy');
+ iconMap.set('11d', '.thunder-storm');
+ iconMap.set('11n', '.thunder-storm');
+ iconMap.set('13d', '.flurries');
+ iconMap.set('13n', '.flurries');
+//  iconMap.set('50d', '.misty');
+//  iconMap.set('50n', '.misty');
+
+
 //temp in Farenheit
 farTemp = (kelvinTemp)*(9/5)- 459.67;
 //temp in Celcius
 celTemp = Math.round(kelvinTemp-273);
 
 
-          $('.results').append('<img src=' + "http://openweathermap.org/img/w/" + icon + ".png" +  '>' +'<h2>'+ city+'</h2>'+ '<h3>' + main + '</h3>' + '<p>' + desc  + '</p>' + '<p>'+ "local temperature is: " + celTemp + '&deg C'+'</p>');
+          $('.results').append('<h2>'+ city+'</h2>'+ '<h3>' + main + '</h3>' + '<p>' + desc  + '</p>' + '<p>'+ "local temperature is: " + celTemp + '&deg C'+'</p>');
+          $(iconMap.get(icon)).removeClass('hidden');
+          // $('.rainy').addClass('hidden');
+
     });// done data
 
   });

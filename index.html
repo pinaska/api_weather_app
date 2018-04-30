@@ -4,21 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>API_labs</title>
+  <title>API_weather_app</title>
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">"">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!--weather app-->
   <div class="weather-widget">
-    <h1>Check the Weather. </h1>
+    <h1>Check the Weather.</h1>
     <div class="date"></div>
     <div class="results"><p>Click the button to get the current weather conditions in your city</p>
     <p id="temp"></p></div>
+    
+  <div class="icon-container">
+    <div class="icon sun-shower hidden">
+      <div class="cloud"></div>
+      <div class="sun">
+        <div class="rays"></div>
+      </div>
+      <div class="rain"></div>
+    </div>
+    
+    <div class="icon thunder-storm hidden">
+      <div class="cloud"></div>
+      <div class="lightning">
+        <div class="bolt"></div>
+        <div class="bolt"></div>
+      </div>
+    </div>
+    
+    <div class="icon cloudy hidden">
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+    </div>
+    
+    <div class="icon flurries hidden">
+      <div class="cloud"></div>
+      <div class="snow">
+        <div class="flake"></div>
+        <div class="flake"></div>
+      </div>
+    </div>
+    
+    <div class="icon sunny hidden">
+      <div class="sun">
+        <div class="rays"></div>
+      </div>
+    </div>
+    
+    <div class="icon rainy hidden">
+      <div class="cloud"></div>
+      <div class="rain"></div>
+    </div>
+  </div>
+  
     <button id="get-weather">get information</button>
   </div>
-  <footer><p>made by Kate Jeziorska <br>#kasiaikod</p><a href="https://github.com/pinaska"><i class="fa fa-github"></a></i></footer>
+
+<footer><p>made by Kate Jeziorska <br>#kasiaikod</p><a href="https://github.com/pinaska"><i class="fa fa-github"></a></i></footer>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   </script>
