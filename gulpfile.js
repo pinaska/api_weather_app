@@ -51,7 +51,6 @@ gulp.task(
       .pipe(gulp.dest('./build/js'));
   })
 );
-
 // Set-up BrowserSync and watch, not working with ubuntu terminal
 
 gulp.task('browser-sync', function() {

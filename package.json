@@ -17,10 +17,16 @@
   },
   "homepage": "https://github.com/pinaska/api_weather_app#readme",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-eslint": "^4.0.2"
+    "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.24.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-sass": "^4.0.1"
   },
   "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^4.0.2",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^3.0.0"
   }
